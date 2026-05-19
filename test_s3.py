@@ -10,10 +10,6 @@ app = FastAPI()
 S3_BUCKET = os.getenv("S3_BUCKET_NAME")
 AWS_REGION = os.getenv("AWS_REGION", "ap-southeast-1")
 
-
-# test workflow change minor
-# test workflow change minor 2
-
 s3_client = boto3.client(
     "s3",
     region_name=AWS_REGION,
